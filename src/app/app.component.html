@@ -1,0 +1,32 @@
+<div *ngIf="!isEmployeeLoggedIn && !isAdminLoggedIn" style="background-color: rgb(16, 160, 78);">
+  <mat-toolbar color="primary" class="navbar"  style="background-color: rgb(16, 160, 78);">
+    <span class="navbar-brand">Task Management System</span>
+    <span class="example-fill-remaining-space"></span>
+    <span class="spacer"></span>
+    <button mat-button routerLink="/signup" routerLinkActive="active">Register</button>
+    <button mat-button routerLink="/login" routerLinkActive="active">Login</button>
+  </mat-toolbar>
+</div>
+
+<div *ngIf="isAdminLoggedIn"  style="background-color: rgb(16, 160, 78);">
+  <mat-toolbar color="primary" class="navbar"  style="background-color: rgb(16, 160, 78);">
+    <span class="navbar-brand">Admin</span>
+    <span class="example-fill-remaining-space"></span>
+    <span class="spacer"></span>
+    <button mat-button routerLink="/admin/dashboard" routerLinkActive="active">Dashboard</button>
+    <button mat-button routerLink="/admin/task" routerLinkActive="active">Post Task</button>
+    <button mat-button (click)="logout()" routerLinkActive="active">Logout</button>
+  </mat-toolbar>
+</div>
+
+<div *ngIf="isEmployeeLoggedIn" style="background-color: rgb(16, 160, 78);">
+  <mat-toolbar color="primary" class="navbar"  style="background-color: rgb(16, 160, 78);">
+    <span class="navbar-brand">Employee</span>
+    <span class="example-fill-remaining-space"></span>
+    <span class="spacer"></span>
+    <button mat-button routerLink="/employee/dashboard" routerLinkActive="active">Dashboard</button>
+    <button mat-button (click)="logout()" routerLinkActive="active">Logout</button>
+  </mat-toolbar>
+</div>
+
+
