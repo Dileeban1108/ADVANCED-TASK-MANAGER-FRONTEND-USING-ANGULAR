@@ -1,27 +1,27 @@
-# Client
+# Advanced Task Manager Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
+## Description
+This is the frontend for the advanced task management application, developed using **Angular** and styled with **Bootstrap**. The frontend allows users to interact with the backend services, manage tasks, and perform actions such as task creation, updating, and deletion. It communicates with the backend API for authentication and task management operations.
 
-## Development server
+### Features:
+- **Responsive UI**: Built with Bootstrap to ensure a clean, responsive design that works on various screen sizes.
+- **User Authentication**: User login and registration integrated with JWT-based authentication.
+- **Task Management**: Users can create, edit, update, and delete tasks seamlessly via the UI.
+- **API Integration**: Communicates with the Spring Boot backend for all data operations.
+- **Real-Time Feedback**: Form validations and error handling for improved user experience.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## Project Setup
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Prerequisites
+Ensure the following tools are installed on your system:
+- **Node.js** (v14 or higher)
+- **Angular CLI** (v12 or higher)
+- **NPM** (Node Package Manager)
 
-## Build
+### Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Dileeban1108/ADVANCED-TASK-MANAGER-FRONTEND-USING-ANGULAR.git
